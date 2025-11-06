@@ -646,22 +646,7 @@ plt.title('Receiver Operating Characteristic (ROC)')
 plt.legend(loc="lower right")
 plt.show()
 
-"""When using SMOTE or any other resampling technique, the proper sequence is crucial to prevent data leakage. Here’s how you should handle it:
-
-Correct Order:
-Train-Test Split First:
-Reason: Splitting your data into training and test sets first ensures that the test set remains untouched by any transformations applied to the training data. This preserves the integrity of the evaluation process, ensuring that your model is evaluated on data it has never seen before.
-Apply SMOTE on the Training Set Only:
-Reason: SMOTE should only be applied to the training data. The purpose of SMOTE is to help the model learn from a balanced dataset during training. Applying SMOTE before the split would cause the same synthetic data to be present in both the training and test sets, leading to overfitting and misleadingly high performance metrics.
-Summary:
-Step 1: Perform train_test_split to separate your data into training and test sets.
-Step 2: Apply SMOTE (or any other resampling technique) only to the training set.
-Step 3: Train your model on the balanced training set.
-Step 4: Evaluate your model on the untouched test set.
-This approach ensures that your model's performance is evaluated fairly and accurately.
-
-Would you like to proceed with any further steps based on this approach?
-
+"""
 **PERFORMANCE PREDICTION(REGRESSION):**
 """
 
