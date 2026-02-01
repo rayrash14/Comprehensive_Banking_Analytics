@@ -30,6 +30,6 @@ Ensured data quality, handled missing values, and conducted exploratory data ana
 **Technological Stack:** 
 
 1. Python for data pre-processing, analysis, and modeling.
-2. Scikit-learn, TensorFlow, or PyTorch for implementing machine learning algorithms.
+2. Scikit-learn for implementing machine learning algorithms.
 3. Google Colab for code development and documentation.
 4. Visualization tools such as Matplotlib or Seaborn for data exploration and presentation.
